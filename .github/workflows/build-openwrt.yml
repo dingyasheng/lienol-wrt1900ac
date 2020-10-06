@@ -116,7 +116,7 @@ jobs:
       if: (!cancelled())
       run: df -hT
         
-   - name:  Pack targets_dir
+    - name:  Pack targets_dir
       if: steps.compile.outputs.status == 'success'
       run: |
         cd openwrt/bin/targets/
